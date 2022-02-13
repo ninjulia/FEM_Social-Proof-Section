@@ -1,0 +1,235 @@
+:root{
+    /*** COLORS ***/
+
+    /** Primary **/
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /** Neutral **/
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --lightest: hsl(0, 0%, 100%);
+
+    /*** TYPOGRAPHY ***/
+
+    --font: 'Spartan', sans-serif;
+    --font-std:400;
+    --font-md:500;
+    --font-bd:700;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img{
+    width:100%;
+    height: auto;
+    max-width: 100%;
+}
+
+body{
+    font-family: var(--font);
+    font-weight: var(--font-std);
+    font-size:1rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* @mobile views */
+    padding:1.5rem;
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    background-size: contain;
+}
+
+.intro .content h1{
+    font-size:1.9rem;
+    color:var(--very-dark-magenta);
+    font-weight: var(--font-bd);
+    text-align: center;
+
+    padding:3.3rem 0rem 1.5rem;
+}
+
+.intro .content p{
+    color:var(--dark-grayish-magenta);
+    text-align: center;
+    font-size:.9rem;
+}
+
+.intro .ratings{
+    padding:2rem 0rem;
+}
+
+.ratings-item{
+    background-color:var(--light-grayish-magenta);
+    margin:1rem 0rem;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.stars{
+    display:inline-block;
+    margin:0 auto;
+    padding-bottom:1rem;
+}
+
+.ratings-item p{
+    text-align: center;
+    font-size:0.6875rem;
+    font-weight: var(--font-bd);
+    color:var(--very-dark-magenta);
+
+}
+
+.icon{
+    width:1rem;
+    height:1rem;
+    margin-right:0.5rem;
+}
+
+.card{
+    background-color:var(--very-dark-magenta);
+    padding:2rem;
+    border-radius: 0.5rem;
+    margin-bottom:1rem;
+}
+
+.card-header{
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+
+}
+
+.avatar{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius: 50%;
+    margin-right:1.5rem;
+}
+
+.details{
+    padding-bottom:2rem;
+}
+
+.details h1{
+    font-size:0.75rem;
+    font-weight: var(--font-bd);
+    color:var(--lightest);
+    padding-bottom:0.1rem;
+}
+
+.details p{
+    font-size:0.6875rem;
+    color:var(--soft-pink);
+}
+
+.card-content{
+    color:var(--lightest);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding:2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        padding:10.25rem 10.25rem 0rem;
+        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top left, bottom right;
+        background-size: 584px 362px, 1085px 673px;
+    }
+
+    .intro{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom:4.6875rem;
+    }
+    
+    .intro .content{
+        flex-basis: 38%;
+    }
+
+    .intro .content h1{
+        text-align: left;
+        padding:0 0 1.5rem;
+        font-size:2.75rem;
+        line-height: 1;
+    }
+
+    .intro .content p{
+        text-align: left;
+    }
+
+    .intro .ratings{
+        flex-basis: 50%;
+        padding:0;
+    }
+
+    .ratings-item{
+        padding:1rem 2rem;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .ratings-item:nth-child(1){
+        margin-right:4.8125rem;
+    }
+
+    .ratings-item:nth-child(2){
+        margin-left:2.8125rem;
+        margin-right:2.8125rem;
+    }
+
+    .ratings-item:nth-child(3){
+        margin-left:4.8125rem;
+    }
+
+    .stars{
+        padding-bottom:0;
+        margin:0 2rem 0 0;
+    }
+
+    .ratings-item p{
+        text-align: left;
+    }
+
+    .reviews{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:flex-start;
+    }
+
+    .card:nth-child(2){
+        margin:1rem 1.5rem 0rem;
+    }
+
+    .card:nth-child(3){
+        margin-top:2rem;
+    }
+
+    .card-content{
+        font-size:0.6875rem;
+    }
+}
