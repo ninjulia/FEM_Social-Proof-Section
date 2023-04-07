@@ -40,11 +40,16 @@ body{
     justify-content: center;
 
     /* @mobile views */
-    padding:1.5rem;
     background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
     background-repeat: no-repeat;
     background-position: left top, right bottom;
     background-size: contain;
+}
+
+.container {
+    max-width:1100px;
+    margin-inline:auto;
+    padding:1.5rem;
 }
 
 .intro .content h1{
@@ -150,13 +155,37 @@ body{
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width:1058px) {
+    .ratings-item {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding:0.5rem 1rem;
+    }
+}
+
+@media screen and (min-width:1058px) {
+    .ratings-item {
+        padding:1rem 2rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap:1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
     body{
-        padding:10.25rem 10.25rem 0rem;
-        background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+        /* presentation only */
+        height:100vh;
+
+        background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
         background-repeat: no-repeat, no-repeat;
         background-position: top left, bottom right;
         background-size: 584px 362px, 1085px 673px;
+    }
+
+    .container{
+        padding: 3rem 3rem 0rem;
     }
 
     .intro{
@@ -186,12 +215,6 @@ body{
         padding:0;
     }
 
-    .ratings-item{
-        padding:1rem 2rem;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-
     .ratings-item:nth-child(1){
         margin-right:4.8125rem;
     }
@@ -207,7 +230,7 @@ body{
 
     .stars{
         padding-bottom:0;
-        margin:0 2rem 0 0;
+        margin:0;
     }
 
     .ratings-item p{

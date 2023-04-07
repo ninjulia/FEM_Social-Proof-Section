@@ -1,6 +1,6 @@
 # Frontend Mentor - Social proof section solution
 
-This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-[screenshot](./screenshot.png)
+![screenshot](screenshot.png?raw=true)
 
 ### Links
 
@@ -47,9 +47,10 @@ Excellent practice for layout and replicating designs from static files.
 ### Continued development
 
 Future improvements
+
 - Component-ize HTML
 - Adjust layout between 728px and 1440px
-- Use CSS Grid 
+- Use CSS Grid
 
 ## Author
 
