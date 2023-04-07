@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot](screenshot.png?raw=true)
+![screenshot](screenshot.PNG?raw=true)
 
 ### Links
 
