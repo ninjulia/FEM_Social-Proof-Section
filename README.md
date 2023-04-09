@@ -49,7 +49,6 @@ Excellent practice for layout and replicating designs from static files.
 Future improvements
 
 - Component-ize HTML
-- Adjust layout between 728px and 1440px
 - Use CSS Grid
 
 ## Author
